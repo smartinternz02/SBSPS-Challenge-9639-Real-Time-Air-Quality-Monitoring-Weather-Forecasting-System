@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Air Quality Predictor</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+	<link rel="stylesheet" href="style.css">
+
+<style>
+.login{
+top: 20%;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+<div>Air Quality Predictor</div>
+</div>
+ <div class="login">
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('register')}}"method="post">
+    	<input type="text" name="name" placeholder="Enter " required="required" style="color:black"/><br>
+        <input type="email" name="email" placeholder="Enter " required="required" style="color:black"/><br>
+		<input type="text" name="phone" placeholder="Enter " required="required" style="color:black"/><br>
+        <input type="city" name="city" placeholder="Enter " required="required" style="color:black"/><br>
+        <input type="password   " name="passw" placeholder="Enter " required="required" style="color:black"/><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button><br>
+    
+    </form>
+
+ <br><br>
+
+</body>
+</html>
